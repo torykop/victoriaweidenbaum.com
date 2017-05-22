@@ -267,11 +267,12 @@ ul.header-nav{
 }
 
 header .logo > a{
-  font-size:23px;
-  font-weight:800;
+  font-size:26px;
+  font-weight:600;
   float:left;
   line-height:80px;
   padding-right:40px;
+  color: #353535;
  /* border-bottom: 1px solid #f1f1f1*/;
 }
 
@@ -376,15 +377,15 @@ CONTENT
 }
 
 .content .text-intro h1{
-  font-size:43px;
+  font-size:40px;
   width:40%;
-  text-transform:uppercase;
-  color:#000000;
-  font-weight:900;
+  /*text-transform:uppercase;*/
+  color:#353535;
+  font-weight:600;
   line-height:70px;
 }
 
-.content .text-intro p{
+/*.content .text-intro p{
   font-size:13px;
   color:#8d8d8d;
   margin-top:30px;
@@ -392,7 +393,7 @@ CONTENT
   line-height:22px;
   letter-spacing:1px;
   width:40%;
-}
+}*/
 
         .typed-cursor{
             opacity: 1;
