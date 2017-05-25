@@ -1,7 +1,40 @@
+@media all and (max-width: 1800px) and (min-width: 1330px) {
+
+  header.boxed .header-margin{
+    width:1200px;
+  }
+  .menu-index {
+    display:none;
+  }
+    .content .text-intro{
+    width:1200px;
+  }
+
+  .footer-margin{
+    width:1200px;
+  }
+
+  .content .text-intro h1, .content .text-intro p{
+    width:60%;
+  }
+
+  #full{
+    width:1200px;
+  }
+
+  .prev-next{
+    max-width:1200px;
+  }
+
+}
+
 @media all and (max-width: 1330px) and (min-width: 1180px) {
 
   header.boxed .header-margin{
     width:1000px;
+  }
+  .menu-index {
+    display:none;
   }
 
   .content .text-intro{
@@ -57,6 +90,9 @@
   header.boxed .header-margin{
     width:800px;
   }
+  .menu-index {
+    display:none;
+  }
 
   .content .text-intro{
     width:800px;
@@ -109,6 +145,11 @@
 
   header.boxed .header-margin{
     width:600px;
+    display: block;
+  }
+
+  .menu-index {
+    display:block;
   }
 
   .content .text-intro{
@@ -130,21 +171,22 @@
   .prev-next{
     max-width:600px;
   }
-  
+
   .home-sidebar{
     display:none;
   }
-  
+
   ul.header-nav{
     width:50%;
-  
+
   }
-  
+
   header li > a{
+    display: none;
     padding-right: 15px;
     padding-left: 15px;
   }
- 
+
 
 
   /*
@@ -202,29 +244,29 @@
   .prev-next{
     max-width:400px;
   }
-  
+
   .home-sidebar{
     display:none;
   }
-  
+
   ul.header-nav{
     width:50%;
-  
+
   }
-  
+
   header li > a{
     padding-right: 15px;
     padding-left: 15px;
   }
- 
+
   .one-column, .two-column{
     width:100%;
   }
-  
+
   .contact-one, .contact-two, .contact-three{
     width:100%;
   }
-  
+
   textarea{
     height:250px;
   }
@@ -232,15 +274,18 @@
   input.button-submit{
     margin-bottom:100px;
   }
-  
+
   .logo, .menu-index{
     display:block;
   }
 
   header.boxed{
-    display:none !important;
-  }  
-  
+    display:block !important;
+  }
+    header li > a{
+    display:none;
+  }
+
   #footer-left{text-align:center;}
 
   /*
@@ -272,6 +317,10 @@
   header.boxed .header-margin{
     width:280px;
   }
+  header .logo > a{
+  font-size:24px;
+  width:280px;
+}
 
   .content .text-intro{
     width:280px;
@@ -280,7 +329,7 @@
   .footer-margin{
     width:280px;
   }
-  
+
   .footer-margin .copyright{line-height:40px;}
 
   .content .text-intro h1, .content .text-intro p{
@@ -291,7 +340,7 @@
     width:280px;
     display:block !important;
   }
-  
+
   .menu-index{
     display:block !important;
   }
@@ -299,23 +348,23 @@
   .prev-next{
     max-width:280px;
   }
-  
+
   .home-sidebar{
     display:none;
   }
- 
+
   .one-column, .two-column{
     width:100%;
   }
-  
+
   .contact-one, .contact-two, .contact-three{
     width:100%;
   }
-  
+
   textarea{
     height:250px;
   }
-  
+
   input, textarea{
     padding:0;
   }
@@ -323,15 +372,18 @@
   input.button-submit{
     margin-bottom:100px;
   }
-  
+
   header.boxed{
-    display:none !important;
-  }  
-  
+    display:block; !important;
+  }
+  header li > a{
+    display:none;
+  }
+
   #footer-left{text-align:center;}
-  
+
   .content .text-intro h1{
-    font-size:33px; 
+    font-size:33px;
     line-height:50px;
   }
 
