@@ -3,7 +3,7 @@
   header.boxed .header-margin{
     width:1200px;
   }
-  .menu-index {
+.menu-index {
     display:none;
   }
     .content .text-intro{
@@ -28,12 +28,15 @@
 
 }
 
+
+}
+
 @media all and (max-width: 1330px) and (min-width: 1180px) {
 
   header.boxed .header-margin{
     width:1000px;
   }
-  .menu-index {
+.menu-index {
     display:none;
   }
 
@@ -90,7 +93,12 @@
   header.boxed .header-margin{
     width:800px;
   }
-  .menu-index {
+
+header li > a{
+  font-size: 14px;
+}
+
+.menu-index {
     display:none;
   }
 

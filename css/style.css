@@ -207,6 +207,8 @@ ul.social-icon a{
   font-size:15px;
   border-bottom:0;
   color:#969696;
+  position:fixed;
+  margin-bottom: 10px;
   padding-right:0px !important;
 }
 
