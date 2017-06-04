@@ -1,17 +1,17 @@
 @media all and (max-width: 1800px) and (min-width: 1330px) {
 
   header.boxed .header-margin{
-    width:1200px;
+    width:1145px;
   }
-.menu-index {
+    .menu-index {
     display:none;
   }
     .content .text-intro{
-    width:1200px;
+    width:1145px;
   }
 
   .footer-margin{
-    width:1200px;
+    width:1145px;
   }
 
   .content .text-intro h1, .content .text-intro p{
@@ -19,11 +19,11 @@
   }
 
   #full{
-    width:1200px;
+    width:1145px;
   }
 
   .prev-next{
-    max-width:1200px;
+    max-width:1145px;
   }
 
 }
@@ -31,12 +31,13 @@
 
 }
 
-@media all and (max-width: 1330px) and (min-width: 1180px) {
+@media all and (max-width: 1329px) and (min-width: 1181px) {
 
   header.boxed .header-margin{
     width:1000px;
   }
-.menu-index {
+
+  .menu-index {
     display:none;
   }
 
@@ -82,23 +83,25 @@
   .grid-hover, li.grid-item, li.grid-item img{
     width:312px;
   }
-
-
 }
 
 
-@media all and (max-width: 1179px) and (min-width: 1024px) {
+@media all and (max-width: 1180px) and (min-width: 1024px) {
 
 
   header.boxed .header-margin{
     width:800px;
   }
 
-header li > a{
+  header li > a{
   font-size: 14px;
-}
+  }
 
-.menu-index {
+  .menu-index {
+    display:none;
+  }
+
+  .social-icon{
     display:none;
   }
 
@@ -114,7 +117,7 @@ header li > a{
     width:60%;
   }
 
-  #full{
+  #fullscreen{
     width:800px;
   }
 
@@ -246,7 +249,7 @@ header li > a{
   }
 
   .menu-index{
-    display:block !important;
+    display:inline !important;
   }
 
   .prev-next{
@@ -326,9 +329,10 @@ header li > a{
     width:280px;
   }
   header .logo > a{
-  font-size:24px;
+  font-size:22px;
   width:280px;
 }
+
 
   .content .text-intro{
     width:280px;

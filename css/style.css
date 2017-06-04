@@ -162,7 +162,7 @@ ul.menu-fullscreen li > a:hover{
   width:100%;
   margin:0 auto;
   height:80px;
-  z-index: 9998;
+  z-index: 9999;
 }
 
 /*
@@ -219,18 +219,18 @@ ul.social-icon a:hover{
 .menu-index{
   position: fixed;
   right: 5%;
-  top: 30px;
+  top: 24px;
   z-index: 99999;
   padding:20px;
-  background:black;
+  /*background:grey;*/
   cursor:pointer;
 }
 
 
 .menu-index i{
   float:right;
-  font-size:18px;
-  color:white;
+  font-size:20px;
+  color:#353535;
   padding-right:0px !important;
 }
 
@@ -579,22 +579,29 @@ FOOTER
 **************************
 */
 
+#ajax-footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
 #footer-box{height:150px; margin-top:75px;}
 
 footer{
   background: #f1f1f1;
   width:100%;
   margin-top:150px;
-  height:100%;
   overflow:hidden;
-  position:relative;
+  height: 15%;
   z-index:10;menu-fullscreen
 }
 
 .footer-margin{
   width:100%;
   margin: 30px auto;
-  line-height: 100px;
+  line-height: 39px;
   height:100%;
 }
 
@@ -713,3 +720,7 @@ textarea{
 }
 
 textarea:focus{background:#f4f4f4; height:250px;}
+
+.portfolio-image {
+  margin: 30px 0;
+}
