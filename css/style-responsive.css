@@ -325,6 +325,7 @@
   header .logo > a{
     font-size:22px;
     width:280px;
+    margin-left: 50px;
   }
 
   .content .text-intro{
