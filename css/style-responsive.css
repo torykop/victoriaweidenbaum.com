@@ -87,10 +87,6 @@
     width:800px;
   }
 
-  header li > a{
-    font-size: 14px;
-  }
-
   .menu-index {
     display:none;
     visibility:hidden;
