@@ -25,6 +25,9 @@
   .prev-next{
     max-width:1145px;
   }
+  .social-footer{
+    display: none;
+  }
 
 }
 
@@ -78,6 +81,9 @@
 
   .grid-hover, li.grid-item, li.grid-item img{
     width:312px;
+  }
+    .social-footer{
+    display: none;
   }
 }
 
