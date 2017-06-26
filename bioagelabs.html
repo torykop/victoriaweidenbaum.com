@@ -37,12 +37,11 @@
 </div>
 
   <!--Header-->
-<!--Header-->
 <header class="boxed" id="header-white">
 
     <div class="header-margin">
 
-        <div class="logo"><a href="./projects.html">Victoria Weidenbaum<i class="ajax-link"</i></a></div>
+        <div class="logo"><a href="./projects.html">Victoria Weidenbaum<i class="ajax-link"></i></a></div>
         <li class="header-nav">
         <li><a href="./projects.html">Portfolio<i class="ajax-link"></i></a></li>
         <li><a href="./resume.html">Resume<i class="ajax-link"></i></a></li>
@@ -77,12 +76,18 @@
 
     </div>
 
-    <header id="menu-fullscreen">
+    <header id="menu-fullscreen" class="v-menu-bars">
 
         <div class="menu-index" id="button">
             <i class="fa fa-bars"></i>
         </div>
     </header>
+
+    <div class="clear"></div>
+
+
+
+<div class="clear"></div>
 
   <!--Content-->
 
@@ -99,9 +104,9 @@
             </div>
 
             <div class="two-column">
-              <p>Bioage Labs is a computational biology start up who works with human data to get more knowledge on the biology and genetics of aging.
+              <p>Bioage Labs is a computational biology startup which works with human data to get more knowledge on the biology and genetics of aging.
                </br>
-              I was working on their responsive website as well as logo and marketing materials in collaboration with their CEO, Product manager and Engineer.
+              I was very inspired by their passionate dedication to the problem of aging and by how hardworking all the team members are. In collaboration with their CEO, Product Manager and Engineer we designed an implemented their responsive website, logo and marketing materials in order to tell their unique...
               </p>
             </div>
 
@@ -144,7 +149,7 @@
 
         </div>
 
-      <div class="copyright">© Copyright 2015 Thomsoon.com. All Rights Reserved.</div>
+      <div class="copyright">© Copyright 2017 VictoriaWeidenbaum.com. All Rights Reserved.</div>
 
     </div>
 
@@ -168,9 +173,10 @@
   <script>
     $('#button, #buttons').on('click', function() {
       $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+      $(".v-menu-bars").fadeToggle("slow","linear");
     // Animation complete.
     });
-  </script>
+</script>
 
 
 </body>

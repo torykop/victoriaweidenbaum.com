@@ -664,7 +664,10 @@ FOOTER
 }
 
 
-#footer-box{height:150px; margin-top:75px;}
+#footer-box{
+  height:150px;
+  margin-top:75px;
+}
 
 footer{
   background: #f1f1f1;
@@ -672,7 +675,7 @@ footer{
   margin-top: 170px;
   overflow:hidden;
   height: 15%;
-  z-index:10;menu-fullscreen
+  z-index:10;
 }
 
 .footer-margin{

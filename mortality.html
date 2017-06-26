@@ -37,12 +37,11 @@
 </div>
 
   <!--Header-->
-<!--Header-->
 <header class="boxed" id="header-white">
 
     <div class="header-margin">
 
-        <div class="logo"><a href="./projects.html">Victoria Weidenbaum<i class="ajax-link"</i></a></div>
+        <div class="logo"><a href="./projects.html">Victoria Weidenbaum<i class="ajax-link"></i></a></div>
         <li class="header-nav">
         <li><a href="./projects.html">Portfolio<i class="ajax-link"></i></a></li>
         <li><a href="./resume.html">Resume<i class="ajax-link"></i></a></li>
@@ -77,12 +76,18 @@
 
     </div>
 
-    <header id="menu-fullscreen">
+    <header id="menu-fullscreen" class="v-menu-bars">
 
         <div class="menu-index" id="button">
             <i class="fa fa-bars"></i>
         </div>
     </header>
+
+    <div class="clear"></div>
+
+
+
+<div class="clear"></div>
 
   <!--Content-->
 
@@ -94,14 +99,12 @@
 
 
             <div class="one-column">
-              <p>Data base, Website</p>
+              <p>Database, Website</p>
               <p><a class="ajax-link" href="http://mortalitypredictors.org/">Mortalitypredictors.com</a></p>
             </div>
 
             <div class="two-column">
-              <p>Based in San Francisco, Brandless is a fresh approach to consumer commerce. Brandless is a community of people who believe that everyone can live better through the stuff we buy and how we buy. The company's mission is deeply rooted in quality, transparency, and community-driven values.
-               </br>
-              In collaboration with developers, designers and product managers we scoped MVP for responsive website and created pixel-perfect interfaces from scratch. Working in Agile it was exciting designing for e-commerce and exploring possibilities of common flows like cart, checkout and others. The website launch on 07/11.
+              <p>MortalityPredictors.org is a database of human biomarkers associated with all-cause mortality in humans. MortalityPredictors.org is made in collaboration with BioAge Labs.
               </p>
             </div>
 
@@ -142,7 +145,7 @@
 
         </div>
 
-      <div class="copyright">© Copyright 2015 Thomsoon.com. All Rights Reserved.</div>
+      <div class="copyright">© Copyright 2015 VictoriaWeidenbaum.com. All Rights Reserved.</div>
 
     </div>
 
@@ -166,9 +169,11 @@
   <script>
     $('#button, #buttons').on('click', function() {
       $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+      $(".v-menu-bars").fadeToggle("slow","linear");
     // Animation complete.
     });
-  </script>
+</script>
+
 
 
 </body>
