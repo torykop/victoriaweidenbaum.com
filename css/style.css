@@ -421,6 +421,9 @@ a{
   padding-bottom: 50px;
 }
 
+.content p {
+  padding-bottom: 10px;
+}
 
 .content .text-intro{
   width: 1140px;

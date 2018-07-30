@@ -7,87 +7,35 @@ $(function () {
 
     $('body').waitForImages({
         finished: function () {
-            Website();
-            $('body').jKit();
+            initWebsite();
         },
         waitForAll: true
     });
-
-
-    /*-------------------------------------------
-    Ajax link page transitions
-    ---------------------------------------------*/
-
-    $("a.ajax-link").live("click", function () {
-        $this = $(this);
-        var link = $this.attr('href');
-        var current_url = $(location).attr('href');
-
-        if (link != current_url && link != '#') {
-            $.ajax({
-                url: link,
-                processData: true,
-                dataType: 'html',
-                success: function (data) {
-                    document.title = $(data).filter('title').text();
-                    current_url = link;
-                    if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
-
-                    setTimeout(function () {
-                        $('#preloader').delay(50).fadeIn(600);
-                        $('html, body').delay(1000).animate({ scrollTop: 0 }, 1000);
-
-                        setTimeout(function () {
-
-                            $('#ajax-content').html($(data).filter('#ajax-content').html());
-                            $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
-
-                            $('body').waitForImages({
-                                finished: function () {
-                                    Website();
-                                    backLoading();
-                                    $('.opacity-nav').delay(50).fadeOut(600);
-                                },
-                                waitForAll: true
-                            });
-                        }, 1000);
-                    }, 0);
-                }
-            });
-        }
-        return false;
-    });
-
-
-    /*-------------------------------------------
-    When you click back arrow
-    ---------------------------------------------*/
-
-
-    function backLoading() {
-        $(window).on("popstate", function () {
-            $('body').fadeOut('slow', function () {
-                location.reload();
-            });
-            $('body').fadeIn();
-        });
-    }
 
     /*-------------------------------------------
     Load Page - next Open Site
     ---------------------------------------------*/
 
-    function Website() {
+    function initWebsite() {
         CheckScripts();
         Masonry();
         $('body').jKit();
         backgroundmenu();
         setTimeout(function () {
-            $(".preloader").fadeOut(500);
-        }, 2000);
-        setTimeout(function () {
             $('header').fadeIn();
         }, 500);
+    }
+
+    /*-------------------------------------------
+    Check Preloader
+    ---------------------------------------------*/
+
+    function preloaderCheck() {
+        $(".preloader").fadeIn("slow");
+        $(window).load(function () {
+            var delay = location.pathname === '/' ? 1000 : 500;
+            $(".preloader").delay(delay).fadeOut("slow");
+        });
     }
 
 
@@ -177,7 +125,7 @@ $(function () {
                         loopCount: false,
                     });
                 }
-            }, 3000);
+            }, 2000);
         });
     }
 
@@ -204,43 +152,6 @@ $(function () {
             });
         }
     }
-
-
-    /*-------------------------------------------
-    Open Check Scription
-    ---------------------------------------------*/
-
-    function OpenCheck() {
-        setTimeout(function () {
-            hidePreloader();
-        }, 1000);
-    }
-
-
-    /*-------------------------------------------
-    Check Preloader
-    ---------------------------------------------*/
-
-    function preloaderCheck() {
-        showPreloader();
-        $(window).load(function () {
-            hidePreloader();
-        });
-    }
-
-    /*-------------------------------------------
-    Functions Show / Hide Preloader
-    ---------------------------------------------*/
-
-    function showPreloader() {
-        $(".preloader").fadeIn("slow");
-    }
-
-    function hidePreloader() {
-        var delay = location.pathname === '/' ? 2000 : 200;
-        $(".preloader").delay(delay).fadeOut("slow");
-    }
-
 
 
 })//End
