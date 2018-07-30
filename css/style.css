@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
 
+html {
+  height: 100%;
+}
+
 body{
+  min-height: 100%;
   font-family: 'Futura', sans-serif;
   font-size:14px;
   font-weight: 400;
@@ -672,9 +677,7 @@ FOOTER
 footer{
   background: #f1f1f1;
   width:100%;
-  margin-top: 170px;
   overflow:hidden;
-  height: 15%;
   z-index:10;
 }
 
@@ -805,3 +808,7 @@ textarea:focus{background:#f4f4f4; height:250px;}
   margin: 30px 0;
 }
 
+.Contact footer {
+  position: absolute;
+  bottom: 0;
+}
