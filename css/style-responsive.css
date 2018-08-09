@@ -238,7 +238,9 @@
     padding-top:20px;
     padding-bottom: 10px;
   }
-
+  .two-column-resume {
+    width: 100%;
+  }
 }
 
 
@@ -292,6 +294,10 @@
 
   .one-column, .two-column{
     width:100%;
+  }
+
+  .two-column-resume {
+    width: 100%;
   }
 
   .contact-one, .contact-two, .contact-three{
@@ -396,6 +402,10 @@
 
   .one-column, .two-column{
     width:100%;
+  }
+
+  .two-column-resume {
+    width: 100%;
   }
 
   .contact-one, .contact-two, .contact-three{

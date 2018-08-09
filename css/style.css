@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900,100,200);
+@import url(http://fonts.googleapis.com/css?family=Avenir:400,300,500,600,700,800,900,100,200);
+
 
 html {
   height: 100%;
@@ -6,9 +7,9 @@ html {
 
 body{
   min-height: 100%;
-  font-family: 'Futura', sans-serif;
-  font-size:14px;
-  font-weight: 400;
+  font-family: 'Avenir', sans-serif;
+  font-size:16px;
+  font-weight: 500;
   overflow-y:scroll;
   -webkit-font-smoothing: antialiased;
 }
@@ -27,9 +28,10 @@ body{
 	}
 
 p{
-  font-family: 'Raleway', sans-serif;
-  font-size:14px;
-  font-weight: 400;
+  font-family: 'Avenir', sans-serif;
+  font-size:16px;
+  line-height:20px; 
+  font-weight: 500;
 }
 
 a{
@@ -277,11 +279,12 @@ ul.header-nav{
 
 header .logo  a{
   font-size:30px;
-  font-weight:300;
+  font-weight:500;
+  letter-spacing:0.2px;
   float:left;
   line-height:120px;
   padding-right:40px;
-  color: #4e4e4e;
+  color: #4a4a4a;
  /* border-bottom: 1px solid #f1f1f1*/;
 }
 
@@ -379,7 +382,7 @@ a{
 }
 
 .one-column p{
-  width:70% !important;
+  width:100% !important;
 }
 
 .two-column p{
@@ -392,7 +395,7 @@ a{
 }
 .two-column-resume p{
   width:100% !important;
-  padding-top:100px;
+  padding-top:92px;
 }
 
 .two-column-resume p.no-padding{
@@ -413,6 +416,15 @@ a{
   clear: both;
 }
 
+.text-body p{
+  font-size:15px;
+  color:#a1a1a1;
+  font-weight:400;
+  line-height:24px;
+  text-align: left;
+  margin: auto !important;
+}
+
 .content{
   position:relative;
   width:1140px;
@@ -421,25 +433,26 @@ a{
   padding-bottom: 50px;
 }
 
-.content p {
+/*.content p {
   padding-bottom: 10px;
-}
+}*/
 
 .content .text-intro{
   width: 1140px;
-  /*margin-top: 300px;*/
+  margin-top: 300px;
   margin: 150px auto 0;
 }
 
 .content .text-intro h1{
-  font-size:40px;
+  font-size:28px;
+  letter-spacing:0.6px;
   width:40%;
-  /*text-transform:uppercase;*/
-  color:#4e4e4e;
-  font-weight:100;
-  line-height:70px;
-  margin-bottom: 10px;
-  padding-top:100px;
+  text-transform:uppercase;
+  color:#4a4a4a;
+  font-weight:500;
+  line-height:55px;
+/*  margin-bottom: 10px;*/
+  padding-top:80px;
 }
 .content .text-intro h2{
   font-size:14px;
@@ -453,7 +466,7 @@ a{
 }
 .content .text-intro h3{
   font-size:14px;
-  width:40%;
+  /*width:50%;*/
   text-transform:uppercase;
   color:#4e4e4e;
   font-weight:100;
@@ -463,13 +476,11 @@ a{
 }
 
 .content .text-intro p{
-  font-size:13px;
-  color:#8d8d8d;
-  margin-top:5px;
+  font-size:15px;
+  color:#a1a1a1;
   font-weight:400;
-  line-height:22px;
-  letter-spacing:1px;
-  width:40%;
+  line-height:25px;
+  margin: auto;
 }
 
 
@@ -590,10 +601,14 @@ PORTFOLIO GRID
 
 #ajax-content{width:100%;}
 
+.portfolio-header .one-column {
+  width: 100%;
+}
+
 .portfolio-grid{
   width:1170px;
   position:relative;
-  margin: 100px auto;
+  margin: 60px auto;
   overflow:hidden;
 }
 
@@ -615,7 +630,7 @@ li.grid-item{
   width:360px;
   height: 100%;
   top:0;
-  background: white;
+  background:white;
   z-index: 2;
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
@@ -626,24 +641,24 @@ li.grid-item{
 }
 
 .grid-hover:hover{
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .grid-hover h1{
-  font-family: "Raleway", sans-serif;
-  font-size:23px;
-  bottom:70px;
+  font-family: "Avenir", sans-serif;
+  font-size:20px;
+  bottom:60px;
   left:30px;
   position:absolute;
   text-transform:uppercase;
   color:#2b2b2b;
   letter-spacing:1px;
-  font-weight:700;
+  font-weight:500;
   line-height:1.2;
 }
 
 .grid-hover p{
-  font-family: "Raleway", sans-serif;
+  font-family: "Avenir", sans-serif;
   font-size:13px;
   bottom:40px;
   left:30px;
@@ -754,7 +769,7 @@ input{
   color:#000000;
   font-weight:500;
   line-height:40px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Avenir', sans-serif;
   margin-bottom:10px;
   font-size:13px;
   padding-left:15px;
@@ -770,7 +785,7 @@ input.button-submit{
   background:#f8f7f7;
   font-weight:500;
   border:0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Avenir', sans-serif;
   color:#000000;
   float:right;
   font-weight:900;
@@ -791,7 +806,7 @@ textarea{
   background:#f8f7f7;
   color:#000000;
   font-size:13px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-weight:500;
   margin-bottom:10px;
   padding:0 0 0 15px;
@@ -808,10 +823,22 @@ textarea{
 textarea:focus{background:#f4f4f4; height:250px;}
 
 .portfolio-image {
-  margin: 30px 0;
+  margin: 20px 20px;
+}
+
+.portfolio-image.gif {
+  width: 80%;
+  border: 1px solid #eaeaea;
+  box-shadow: 1px 2px 4px #eaeaea;
+  display: block;
+  margin: 20px auto;
 }
 
 .Contact footer {
   position: absolute;
   bottom: 0;
+}
+
+.content .text-intro.contact p {
+  width: 100%;
 }

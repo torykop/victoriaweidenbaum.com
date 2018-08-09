@@ -6,9 +6,9 @@ layout: default
     <h1>{{ page.title }}</h1>
 
     <div class="one-column">
-        <p>{{page.description}}</p>
+        <p>{{ page.description }}</p>
         <p>
-            <a href="{{page.portfolio_url}}" target="_blank">{{page.url_title}}</a>
+            <a href="{{ page.portfolio_url }}" target="_blank">{{ page.url_title }}</a>
         </p>
 
     </div>
@@ -18,25 +18,26 @@ layout: default
     </div>
 
     <div class="clear"></div>
-    
-    {% for image in page.images %}
-        <img class="portfolio-image" src="{{ image | relative_url }}" width="100%">
-    {% endfor %}
+
+    {% for block in page.blocks %}
+        <img class="portfolio-image {% if block.imgClass %}{{block.imgClass}}{% endif %}" src="{{ block.path | relative_url }}" width="100%">
+        {% if block.text %}<p class="text-body">{{ block.text }}</p>{% endif %}
+    {% endfor %}
     
 
     <!-- We're intentionally switching next and previous urls -->
     <div class="prev-next">
         <div class="prev-button">
             {% if page.next.url %}
-            <a href="{{page.next.url}}">&laquo; Previous: {{page.next.title}}</a>
+            <a href="{{page.next.url}}">&laquo; Previous: {{ page.next.title }}</a>
             {% else %}
-            <p> </p>
+            <p style="display: inline-block;"></p>
             {% endif %}
         </div>
         
         <div class="next-button">
             {% if page.previous.url %}
-            <a class="next" href="{{page.previous.url}}">Next: {{page.previous.title}} &raquo;</a>
+            <a class="next" href="{{page.previous.url}}">Next: {{ page.previous.title }} &raquo;</a>
             {% else %}
             <a></a>
             {% endif %}
