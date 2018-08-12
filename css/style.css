@@ -833,7 +833,13 @@ textarea:focus{background:#f4f4f4; height:250px;}
   display: block;
   margin: 20px auto;
 }
-
+.portfolio-image.mobile.gif {
+  width: 30%;
+  border: 1px solid #eaeaea;
+  box-shadow: 1px 2px 4px #eaeaea;
+  display: block;
+  margin: 20px auto;
+}
 .Contact footer {
   position: absolute;
   bottom: 0;
