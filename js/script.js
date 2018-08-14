@@ -4,15 +4,7 @@ $(function () {
     /*-------------------------------------------
     Load Page
     ---------------------------------------------*/
-
-    $('img').filter(function () { 
-        return !$(this).hasClass('gif'); 
-    }).waitForImages({
-        finished: function () {
-            initWebsite();
-        },
-        waitForAll: true
-    });
+    initWebsite();
 
     /*-------------------------------------------
     Load Page - next Open Site
