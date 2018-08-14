@@ -5,11 +5,13 @@ $(function () {
     Load Page
     ---------------------------------------------*/
 
-    $('body').waitForImages({
-        finished: function () {
-            initWebsite();
-        },
-        waitForAll: true
+    $('img').filter(function () { 
+        return !$(this).hasClass('gif'); 
+    }).waitForImages({
+        finished: function () {
+            initWebsite();
+        },
+        waitForAll: true
     });
 
     /*-------------------------------------------
