@@ -21,7 +21,14 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <script src="{{ 'js/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ 'js/jquery.easing.min.js' | relative_url }}"></script>
+    <script src="{{ 'js/modernizr.custom.42534.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ 'js/jquery.waitforimages.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ 'js/masonry.pkgd.min.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ 'js/imagesloaded.pkgd.min.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ 'js/jquery.jkit.1.2.16.min.js' | relative_url }}"></script>
+    <script src="{{ 'js/script.js' | relative_url }}" type="text/javascript"></script>
 </head>
 
 <body class="{{page.title}}">
@@ -172,29 +179,6 @@
             <div class="copyright">© Copyright 2018 victoriaweidenbaum.com All Rights Reserved.</div>
         </div>
     </footer>
-
-
-    <!--Scripts-->
-
-    <script src="{{ 'js/jquery.min.js' | relative_url }}"></script>
-    <script src="{{ 'js/jquery.easing.min.js' | relative_url }}"></script>
-    <script src="{{ 'js/modernizr.custom.42534.js' | relative_url }}" type="text/javascript"></script>
-    <script src="{{ 'js/jquery.waitforimages.js' | relative_url }}" type="text/javascript"></script>
-    <script src="{{ 'js/typed.js' | relative_url }}" type="text/javascript"></script>
-    <script src="{{ 'js/masonry.pkgd.min.js' | relative_url }}" type="text/javascript"></script>
-    <script src="{{ 'js/imagesloaded.pkgd.min.js' | relative_url }}" type="text/javascript"></script>
-    <script src="{{ 'js/jquery.jkit.1.2.16.min.js' | relative_url }}"></script>
-
-    <script src="{{ 'js/script.js' | relative_url }}" type="text/javascript"></script>
-
-    <script>
-        $('#button, #buttons').on('click', function () {
-            $(".opacity-nav").fadeToggle("slow", "linear");
-            $(".v-menu-bars").fadeToggle("slow", "linear");
-            // Animation complete.
-        });
-    </script>
-
 
 </body>
 
